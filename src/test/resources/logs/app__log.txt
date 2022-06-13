@@ -1,18 +1,254 @@
-INFO    2022-06-13 17:25:52,239 [main] listener.ListenerTest  - *******************testCases.RewardCreationTest.verifyBrandsTagsCategoriesLabelsFieldDisappersInPrivateTypeRewardTest started*******************
-INFO    2022-06-13 17:25:52,395 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
-INFO    2022-06-13 17:25:52,442 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (1ee3f97c1edd416c91df9df73a0f2318)] -> xpath: //input[@id='email']]
-INFO    2022-06-13 17:25:52,760 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
-INFO    2022-06-13 17:25:52,841 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
-INFO    2022-06-13 17:25:52,893 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (1ee3f97c1edd416c91df9df73a0f2318)] -> xpath: //input[@id='password']]
-INFO    2022-06-13 17:25:53,050 [main] pages.LoginPage  - Entered password : reward_admin
-INFO    2022-06-13 17:25:53,264 [main] pages.LoginPage  - clicked on login button
-INFO    2022-06-13 17:25:54,946 [main] pages.OverviewPage  - clicked on rewards section 
-INFO    2022-06-13 17:25:56,184 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
-INFO    2022-06-13 17:25:56,205 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (1ee3f97c1edd416c91df9df73a0f2318)] -> xpath: //span[text()='Create New']]
-INFO    2022-06-13 17:25:56,739 [main] pages.RewardsPage  - clicked on Create New button
-INFO    2022-06-13 17:25:57,035 [main] pages.RewardsPage  - User navigated to Reward creation page : true
-INFO    2022-06-13 17:26:27,426 [main] commons.BasePage  - inside catch after exception :TimeoutException
-INFO    2022-06-13 17:26:27,427 [main] pages.RewardCreationPage  - Brands field present on priavte type of reward : false
-INFO    2022-06-13 17:26:27,554 [main] pages.RewardCreationPage  - tags field present on priavte type of reward : true
-INFO    2022-06-13 17:26:27,658 [main] pages.RewardCreationPage  - categories field present on priavte type of reward : true
-INFO    2022-06-13 17:26:27,770 [main] pages.RewardCreationPage  - lables field present on priavte type of reward : true
+INFO    2022-06-13 17:43:20,490 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyEachFileShouldBeTiedToOneActionTest started*******************
+INFO    2022-06-13 17:43:20,600 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:43:20,644 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (c37b244068a673a9027a1a90fc47844c)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:43:20,951 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:43:21,028 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:43:21,075 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (c37b244068a673a9027a1a90fc47844c)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:43:21,213 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:43:21,435 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:43:24,621 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:43:25,089 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:43:25,090 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:43:26,361 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:43:26,372 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c37b244068a673a9027a1a90fc47844c)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:43:26,855 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:43:27,010 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:43:27,036 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:43:27,038 [main] pages.BulkActionsPage  - Uploading file : demo.csv
+INFO    2022-06-13 17:43:27,038 [main] pages.BulkActionsPage  - uploading file of type : csv
+INFO    2022-06-13 17:43:32,573 [main] pages.BulkActionsPage  - Alert poped up as : File uploaded
+INFO    2022-06-13 17:43:32,906 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:43:32,929 [main] pages.BulkActionsPage  - expected action type present for file demo.csv is : Upload users
+INFO    2022-06-13 17:43:47,977 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:43:47,991 [main] pages.BulkActionsPage  - actual action type present for file demo.csv is : Upload users
+INFO    2022-06-13 17:43:47,993 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyEachFileShouldBeTiedToOneActionTest passed*******************
+INFO    2022-06-13 17:43:54,891 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyNewlyUploadedFileReflectsInListTest started*******************
+INFO    2022-06-13 17:43:54,979 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:43:55,021 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:43:55,385 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:43:55,443 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:43:55,490 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:43:55,646 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:43:55,824 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:43:58,994 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:43:59,394 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:43:59,395 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:44:00,612 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:44:00,633 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:44:01,103 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:44:01,301 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:44:01,921 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:44:01,922 [main] pages.BulkActionsPage  - Uploading file : demo.csv
+INFO    2022-06-13 17:44:01,922 [main] pages.BulkActionsPage  - uploading file of type : csv
+INFO    2022-06-13 17:44:07,164 [main] pages.BulkActionsPage  - Alert poped up as : File uploaded
+INFO    2022-06-13 17:44:07,274 [main] commons.ExplicitWait  - Waiting for locator to be visible: [[[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]], [[ChromeDriver: chrome on WINDOWS (31aa253292bcb7245bcdca72826dd9c9)] -> xpath: //tbody/tr/td[2]]]
+INFO    2022-06-13 17:44:09,614 [main] pages.BulkActionsPage  - Files present in list : [demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, demo.csv, Book1.xlsx, Book1.xlsx, C__.Net.txt]
+INFO    2022-06-13 17:44:09,615 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyNewlyUploadedFileReflectsInListTest passed*******************
+INFO    2022-06-13 17:44:15,202 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserAbleToUploadCsvTypeFileTest started*******************
+INFO    2022-06-13 17:44:15,279 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:15,325 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (77565c420507acaf00402c4a0e89090b)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:44:15,629 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:44:15,714 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:15,760 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (77565c420507acaf00402c4a0e89090b)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:44:15,901 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:44:16,089 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:44:21,873 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:44:22,127 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:44:22,128 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:44:23,583 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:44:23,604 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (77565c420507acaf00402c4a0e89090b)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:44:24,433 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:44:24,709 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:44:24,758 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:44:24,758 [main] pages.BulkActionsPage  - Uploading file : demo.csv
+INFO    2022-06-13 17:44:24,758 [main] pages.BulkActionsPage  - uploading file of type : csv
+INFO    2022-06-13 17:44:29,864 [main] pages.BulkActionsPage  - Alert poped up as : File uploaded
+INFO    2022-06-13 17:44:29,864 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserAbleToUploadCsvTypeFileTest passed*******************
+INFO    2022-06-13 17:44:37,362 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserAbleToUploadExcelTypeFile started*******************
+INFO    2022-06-13 17:44:37,442 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:37,490 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (3b3aaeb080d2050f0a8697f7d64ccbe3)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:44:37,832 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:44:37,908 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:37,956 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (3b3aaeb080d2050f0a8697f7d64ccbe3)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:44:38,087 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:44:38,284 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:44:39,805 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:44:40,076 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:44:40,076 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:44:41,603 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:44:41,624 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (3b3aaeb080d2050f0a8697f7d64ccbe3)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:44:42,143 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:44:42,296 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:44:42,314 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:44:42,314 [main] pages.BulkActionsPage  - Uploading file : sampleExcel.xlsx
+INFO    2022-06-13 17:44:42,315 [main] pages.BulkActionsPage  - uploading file of type : xlsx
+INFO    2022-06-13 17:44:46,531 [main] pages.BulkActionsPage  - Alert poped up as : Error uploading file.
+INFO    2022-06-13 17:44:54,895 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserAbleToUploadTxtTypeFileTest started*******************
+INFO    2022-06-13 17:44:54,971 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:55,015 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (da792005290dcabd0c2290ef074361a3)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:44:55,333 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:44:55,401 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:44:55,444 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (da792005290dcabd0c2290ef074361a3)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:44:55,587 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:44:55,767 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:44:58,311 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:44:58,911 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:44:58,911 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:45:00,139 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:45:00,158 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (da792005290dcabd0c2290ef074361a3)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:45:00,625 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:45:00,861 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:45:00,866 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:45:00,867 [main] pages.BulkActionsPage  - Uploading file : sampleText.txt
+INFO    2022-06-13 17:45:00,869 [main] pages.BulkActionsPage  - uploading file of type : txt
+INFO    2022-06-13 17:45:05,366 [main] pages.BulkActionsPage  - Alert poped up as : Error uploading file.
+INFO    2022-06-13 17:45:14,470 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserNotAbleToUploadPDFTypeFileTest started*******************
+INFO    2022-06-13 17:45:14,540 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:14,585 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (9f46b0f12e35d461158d2a7c55195e8d)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:45:14,884 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:45:14,955 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:15,002 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (9f46b0f12e35d461158d2a7c55195e8d)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:45:15,131 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:45:15,301 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:45:18,700 [main] pages.OverviewPage  - clicked on bulk actions section 
+INFO    2022-06-13 17:45:19,126 [main] pages.BulkActionsPage  - clicked on upload button
+INFO    2022-06-13 17:45:19,127 [main] pages.BulkActionsPage  - Selecting option type as : Upload Users
+INFO    2022-06-13 17:45:20,349 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:45:20,367 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (9f46b0f12e35d461158d2a7c55195e8d)] -> xpath: //span[@class='ant-select-arrow']]
+INFO    2022-06-13 17:45:20,863 [main] pages.BulkActionsPage  - selected option type as : Upload Users
+INFO    2022-06-13 17:45:21,073 [main] pages.BulkActionsPage  - clicked on file drop area 
+INFO    2022-06-13 17:45:21,079 [main] pages.BulkActionsPage  - clicked on upload button on form and uploaded file
+INFO    2022-06-13 17:45:21,080 [main] pages.BulkActionsPage  - Uploading file : sample.pdf
+INFO    2022-06-13 17:45:21,080 [main] pages.BulkActionsPage  - uploading file of type : pdf
+INFO    2022-06-13 17:45:25,804 [main] pages.BulkActionsPage  - Alert poped up as : Error uploading file.
+INFO    2022-06-13 17:45:25,805 [main] listener.ListenerTest  - *******************testCases.BulkActionsTest.verifyUserNotAbleToUploadPDFTypeFileTest passed*******************
+INFO    2022-06-13 17:45:30,496 [main] listener.ListenerTest  - *******************testCases.OverviewTest.VerifyNonAuthorizedUserShouldNotHaveAccessToRewardDetailPageTest started*******************
+INFO    2022-06-13 17:45:30,496 [main] pages.OverviewPage  - trying to access reward page using url 
+INFO    2022-06-13 17:45:31,496 [main] pages.OverviewPage  - Non Authorised user could not access reward page using url : https://dashboard.perxtech.io/dashboard/signin
+INFO    2022-06-13 17:45:31,503 [main] listener.ListenerTest  - *******************testCases.OverviewTest.VerifyNonAuthorizedUserShouldNotHaveAccessToRewardDetailPageTest passed*******************
+INFO    2022-06-13 17:45:36,113 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyAdminHasSufficientPermissionToVisitBulkFileUploadPage started*******************
+INFO    2022-06-13 17:45:36,198 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:36,252 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (1d89aaf02f415c0a8c88c6a3b27590c1)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:45:36,561 [main] pages.LoginPage  - Entered email : thao+test-qa-interview@perxtech.com
+INFO    2022-06-13 17:45:36,619 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:36,664 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (1d89aaf02f415c0a8c88c6a3b27590c1)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:45:36,797 [main] pages.LoginPage  - Entered password : admin1234
+INFO    2022-06-13 17:45:36,964 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:45:39,820 [main] pages.OverviewPage  - Checking if user has sufficient permission to Visit Bulk File Upload Page : true
+INFO    2022-06-13 17:45:39,820 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyAdminHasSufficientPermissionToVisitBulkFileUploadPage passed*******************
+INFO    2022-06-13 17:45:48,385 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyRewardAdminDoesNotHaveAccessToOtherSectionsTest started*******************
+INFO    2022-06-13 17:45:48,464 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:48,507 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (7e5671034f8cc306b93db6af545bee7f)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:45:48,867 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:45:48,934 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:45:48,985 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (7e5671034f8cc306b93db6af545bee7f)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:45:49,125 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:45:49,301 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:46:20,583 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:46:20,583 [main] pages.OverviewPage  - checking if Loyalities section is accessible to Reward admin : false
+INFO    2022-06-13 17:46:50,741 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:46:50,741 [main] pages.OverviewPage  - checking if Campaigns section is accessible to Reward admin : false
+INFO    2022-06-13 17:47:20,912 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:47:20,912 [main] pages.OverviewPage  - checking if merchants section is accessible to Reward admin : false
+INFO    2022-06-13 17:47:51,055 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:47:51,055 [main] pages.OverviewPage  - checking if user list section is accessible to Reward admin : false
+INFO    2022-06-13 17:48:21,231 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:48:21,232 [main] pages.OverviewPage  - checking if bulk actions section is accessible to Reward admin : false
+INFO    2022-06-13 17:48:21,232 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyRewardAdminDoesNotHaveAccessToOtherSectionsTest passed*******************
+INFO    2022-06-13 17:48:30,622 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyRewardAdminHasSufficientPermissionToCreateRewardTest started*******************
+INFO    2022-06-13 17:48:30,696 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:30,739 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (382301e4c9a0da3839a8fb89b6f5d8c7)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:48:31,099 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:48:31,158 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:31,203 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (382301e4c9a0da3839a8fb89b6f5d8c7)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:48:31,363 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:48:31,534 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:48:33,457 [main] pages.OverviewPage  - Checking if user has sufficient permission to create reward : true
+INFO    2022-06-13 17:48:33,457 [main] listener.ListenerTest  - *******************testCases.OverviewTest.verifyRewardAdminHasSufficientPermissionToCreateRewardTest passed*******************
+INFO    2022-06-13 17:48:38,461 [main] listener.ListenerTest  - *******************testCases.RewardsTest.newlyCreatedRewardPresentInListTest started*******************
+INFO    2022-06-13 17:48:38,538 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:38,584 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:48:38,964 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:48:39,041 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:39,090 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:48:39,233 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:48:39,431 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:48:41,679 [main] pages.OverviewPage  - clicked on rewards section 
+INFO    2022-06-13 17:48:42,837 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:48:43,012 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //span[text()='Create New']]
+INFO    2022-06-13 17:48:43,708 [main] pages.RewardsPage  - clicked on Create New button
+INFO    2022-06-13 17:48:44,095 [main] pages.RewardsPage  - User navigated to Reward creation page : true
+INFO    2022-06-13 17:48:44,177 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:44,221 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //input[@name='name_en']]
+INFO    2022-06-13 17:48:44,840 [main] pages.RewardCreationPage  - entered value in Reward name field and clicking on next button
+INFO    2022-06-13 17:48:46,012 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:48:46,033 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //span[contains(text(),'Next')]]
+INFO    2022-06-13 17:48:47,601 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:48:47,620 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: (//*[@class='sc-iAvgwm eLjODB'])[2]/div/span/div/i[1]]
+INFO    2022-06-13 17:48:47,851 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:47,899 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //input[@class='ant-calendar-input ']]
+INFO    2022-06-13 17:48:48,200 [main] pages.RewardCreationPage  - Entered validity period dates and clicking on next button
+INFO    2022-06-13 17:48:49,378 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:48:49,399 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //span[contains(text(),'Next')]]
+INFO    2022-06-13 17:48:49,648 [main] pages.RewardCreationPage  - clicking on save button to create reward
+INFO    2022-06-13 17:48:51,143 [main] pages.OverviewPage  - clicked on rewards section 
+INFO    2022-06-13 17:48:52,091 [main] commons.ExplicitWait  - Waiting for locator to be visible: [[[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]], [[ChromeDriver: chrome on WINDOWS (b5a4f227e9f3a83178a3c0cc993bd86f)] -> xpath: //tbody[@class='ant-table-tbody']/tr/td[1]]]
+INFO    2022-06-13 17:48:54,302 [main] pages.RewardsPage  - Rewards presnt : [TestNewReward
+ID: 47, TestRewardName
+ID: 46, Dominque
+ID: 45, TestRewardName
+ID: 44, TestNewReward
+ID: 43, asas
+ID: 42, test private
+ID: 40, PrivateReward
+ID: 39, name123
+ID: 38, name123
+ID: 37, name123
+ID: 36, name123
+ID: 35, name123
+ID: 34, asdfdsf32432
+ID: 33, name123
+ID: 32, name123
+ID: 31, name123
+ID: 30, name123
+ID: 29, name123
+ID: 28, name123
+ID: 27, sid_test3_rewardName203
+ID: 26, sid_test3_rewardName402
+ID: 25, adsfadsf
+ID: 24, sidReward
+ID: 23, TestRewardName
+ID: 22]
+INFO    2022-06-13 17:48:54,303 [main] listener.ListenerTest  - *******************testCases.RewardsTest.newlyCreatedRewardPresentInListTest passed*******************
+INFO    2022-06-13 17:48:59,500 [main] listener.ListenerTest  - *******************testCases.RewardsTest.verifyClickingCreateNewButtonLeadsToRewardCreationPageTest started*******************
+INFO    2022-06-13 17:48:59,584 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:48:59,634 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (0337d18c707a156b0d808a70f5d043b8)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:49:00,008 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:49:00,081 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:49:00,126 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (0337d18c707a156b0d808a70f5d043b8)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:49:00,282 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:49:00,474 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:49:02,569 [main] pages.OverviewPage  - clicked on rewards section 
+INFO    2022-06-13 17:49:03,780 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:49:03,799 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (0337d18c707a156b0d808a70f5d043b8)] -> xpath: //span[text()='Create New']]
+INFO    2022-06-13 17:49:04,519 [main] pages.RewardsPage  - clicked on Create New button
+INFO    2022-06-13 17:49:04,858 [main] pages.RewardsPage  - User navigated to Reward creation page : true
+INFO    2022-06-13 17:49:04,858 [main] listener.ListenerTest  - *******************testCases.RewardsTest.verifyClickingCreateNewButtonLeadsToRewardCreationPageTest passed*******************
+INFO    2022-06-13 17:49:09,793 [main] listener.ListenerTest  - *******************testCases.RewardCreationTest.verifyBrandsTagsCategoriesLabelsFieldDisappersInPrivateTypeRewardTest started*******************
+INFO    2022-06-13 17:49:09,871 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:49:09,916 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (57e7de79de3efd891caa0cb080d82ea8)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:49:10,258 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:49:10,310 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:49:10,364 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (57e7de79de3efd891caa0cb080d82ea8)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:49:10,514 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:49:10,716 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:49:15,825 [main] pages.OverviewPage  - clicked on rewards section 
+INFO    2022-06-13 17:49:17,251 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:49:17,276 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (57e7de79de3efd891caa0cb080d82ea8)] -> xpath: //span[text()='Create New']]
+INFO    2022-06-13 17:49:17,951 [main] pages.RewardsPage  - clicked on Create New button
+INFO    2022-06-13 17:49:18,375 [main] pages.RewardsPage  - User navigated to Reward creation page : true
+INFO    2022-06-13 17:49:48,748 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:49:48,748 [main] pages.RewardCreationPage  - Brands field present on priavte type of reward : false
+INFO    2022-06-13 17:49:48,902 [main] pages.RewardCreationPage  - tags field present on priavte type of reward : true
+INFO    2022-06-13 17:49:49,021 [main] pages.RewardCreationPage  - categories field present on priavte type of reward : true
+INFO    2022-06-13 17:49:49,128 [main] pages.RewardCreationPage  - lables field present on priavte type of reward : true

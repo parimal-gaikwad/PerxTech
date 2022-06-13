@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Dashboard</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 13 17:23:19 IST 2022</td>
+<td>Started on:</td><td>Mon Jun 13 17:43:08 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48042 ms)</td>
+<tr><td>Total time:</td><td>407 seconds (407923 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 	fields did not disappear on private type of reward expected [true] but found [false]
 	at testCases.RewardCreationTest.verifyBrandsTagsCategoriesLabelsFieldDisappersInPrivateTypeRewardTest(RewardCreationTest.java:72)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245530164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace245530164'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966678913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966678913'><pre>java.lang.AssertionError: The following asserts failed:
 	fields did not disappear on private type of reward expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
@@ -119,8 +119,160 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
-<td>36</td>
-<td>testCases.RewardCreationTest@58c1670b</td></tr>
+<td>39</td>
+<td>testCases.RewardCreationTest@e874448</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyUserAbleToUploadExcelTypeFile()'><b>verifyUserAbleToUploadExcelTypeFile</b><br>Test class: testCases.BulkActionsTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Excel type file not accepted expected [true] but found [false]
+	at testCases.BulkActionsTest.verifyUserAbleToUploadExcelTypeFile(BulkActionsTest.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace320043061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace320043061'><pre>java.lang.AssertionError: The following asserts failed:
+	Excel type file not accepted expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.BulkActionsTest.verifyUserAbleToUploadExcelTypeFile(BulkActionsTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>9</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyUserAbleToUploadTxtTypeFileTest()'><b>verifyUserAbleToUploadTxtTypeFileTest</b><br>Test class: testCases.BulkActionsTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Text type file not accepted expected [true] but found [false]
+	at testCases.BulkActionsTest.verifyUserAbleToUploadTxtTypeFileTest(BulkActionsTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1240537166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1240537166'><pre>java.lang.AssertionError: The following asserts failed:
+	Text type file not accepted expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.BulkActionsTest.verifyUserAbleToUploadTxtTypeFileTest(BulkActionsTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>10</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.OverviewTest.VerifyNonAuthorizedUserShouldNotHaveAccessToRewardDetailPageTest()'><b>VerifyNonAuthorizedUserShouldNotHaveAccessToRewardDetailPageTest</b><br>Test class: testCases.OverviewTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.OverviewTest@7ce6a65d</td></tr>
+<tr>
+<td title='testCases.RewardsTest.newlyCreatedRewardPresentInListTest()'><b>newlyCreatedRewardPresentInListTest</b><br>Test class: testCases.RewardsTest</td>
+<td></td>
+<td>15</td>
+<td>testCases.RewardsTest@1500955a</td></tr>
+<tr>
+<td title='testCases.OverviewTest.verifyAdminHasSufficientPermissionToVisitBulkFileUploadPage()'><b>verifyAdminHasSufficientPermissionToVisitBulkFileUploadPage</b><br>Test class: testCases.OverviewTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.OverviewTest@7ce6a65d</td></tr>
+<tr>
+<td title='testCases.RewardsTest.verifyClickingCreateNewButtonLeadsToRewardCreationPageTest()'><b>verifyClickingCreateNewButtonLeadsToRewardCreationPageTest</b><br>Test class: testCases.RewardsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.RewardsTest@1500955a</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyEachFileShouldBeTiedToOneActionTest()'><b>verifyEachFileShouldBeTiedToOneActionTest</b><br>Test class: testCases.BulkActionsTest</td>
+<td></td>
+<td>27</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyNewlyUploadedFileReflectsInListTest()'><b>verifyNewlyUploadedFileReflectsInListTest</b><br>Test class: testCases.BulkActionsTest</td>
+<td></td>
+<td>14</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
+<tr>
+<td title='testCases.OverviewTest.verifyRewardAdminDoesNotHaveAccessToOtherSectionsTest()'><b>verifyRewardAdminDoesNotHaveAccessToOtherSectionsTest</b><br>Test class: testCases.OverviewTest</td>
+<td></td>
+<td>152</td>
+<td>testCases.OverviewTest@7ce6a65d</td></tr>
+<tr>
+<td title='testCases.OverviewTest.verifyRewardAdminHasSufficientPermissionToCreateRewardTest()'><b>verifyRewardAdminHasSufficientPermissionToCreateRewardTest</b><br>Test class: testCases.OverviewTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.OverviewTest@7ce6a65d</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyUserAbleToUploadCsvTypeFileTest()'><b>verifyUserAbleToUploadCsvTypeFileTest</b><br>Test class: testCases.BulkActionsTest</td>
+<td></td>
+<td>14</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
+<tr>
+<td title='testCases.BulkActionsTest.verifyUserNotAbleToUploadPDFTypeFileTest()'><b>verifyUserNotAbleToUploadPDFTypeFileTest</b><br>Test class: testCases.BulkActionsTest</td>
+<td></td>
+<td>11</td>
+<td>testCases.BulkActionsTest@4abdb505</td></tr>
 </table><p>
 </body>
 </html>

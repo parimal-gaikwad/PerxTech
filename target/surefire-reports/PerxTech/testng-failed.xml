@@ -16,6 +16,16 @@
           <include name="startLogs"/>
         </methods>
       </class> <!-- testCases.RewardCreationTest -->
+      <class name="testCases.BulkActionsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyUserAbleToUploadTxtTypeFileTest"/>
+          <include name="verifyUserAbleToUploadExcelTypeFile"/>
+          <include name="tearDown"/>
+          <include name="startLogs"/>
+          <include name="openPage"/>
+        </methods>
+      </class> <!-- testCases.BulkActionsTest -->
     </classes>
   </test> <!-- Dashboard(failed) -->
 </suite> <!-- Failed suite [PerxTech] -->
