@@ -1,0 +1,18 @@
+INFO    2022-06-13 17:23:26,938 [main] listener.ListenerTest  - *******************testCases.RewardCreationTest.verifyBrandsTagsCategoriesLabelsFieldDisappersInPrivateTypeRewardTest started*******************
+INFO    2022-06-13 17:23:27,042 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:23:27,088 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (5a3681e897f2d275e9e094745096bd7e)] -> xpath: //input[@id='email']]
+INFO    2022-06-13 17:23:27,472 [main] pages.LoginPage  - Entered email : thao+reward-test-qa-interview@perxtech.com
+INFO    2022-06-13 17:23:27,546 [main] commons.JavaScriptHelper  - arguments[0].scrollIntoView()
+INFO    2022-06-13 17:23:27,596 [main] commons.JavaScriptHelper  - scrolled into view of : [[ChromeDriver: chrome on WINDOWS (5a3681e897f2d275e9e094745096bd7e)] -> xpath: //input[@id='password']]
+INFO    2022-06-13 17:23:27,731 [main] pages.LoginPage  - Entered password : reward_admin
+INFO    2022-06-13 17:23:27,999 [main] pages.LoginPage  - clicked on login button
+INFO    2022-06-13 17:23:30,675 [main] pages.OverviewPage  - clicked on rewards section 
+INFO    2022-06-13 17:23:31,923 [main] commons.BasePage  - inside catch after exception :ElementClickInterceptedException
+INFO    2022-06-13 17:23:31,937 [main] commons.ExplicitWait  - Waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (5a3681e897f2d275e9e094745096bd7e)] -> xpath: //span[text()='Create New']]
+INFO    2022-06-13 17:23:32,642 [main] pages.RewardsPage  - clicked on Create New button
+INFO    2022-06-13 17:23:32,936 [main] pages.RewardsPage  - User navigated to Reward creation page : true
+INFO    2022-06-13 17:24:03,276 [main] commons.BasePage  - inside catch after exception :TimeoutException
+INFO    2022-06-13 17:24:03,277 [main] pages.RewardCreationPage  - Brands field present on priavte type of reward : false
+INFO    2022-06-13 17:24:03,422 [main] pages.RewardCreationPage  - tags field present on priavte type of reward : true
+INFO    2022-06-13 17:24:03,541 [main] pages.RewardCreationPage  - categories field present on priavte type of reward : true
+INFO    2022-06-13 17:24:03,650 [main] pages.RewardCreationPage  - lables field present on priavte type of reward : true

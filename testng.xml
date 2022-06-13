@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PerxTech">
+	<listeners>
+		<listener class-name="listener.ExtentReporterNG" />
+		<listener class-name="listener.ListenerTest" />
+	</listeners>
+
+	<test name="Dashboard">
+
+
+		<classes>
+				<!--	<class name="testCases.BulkActionsTest"></class>
+					<class name="testCases.OverviewTest"></class>
+					<class name="testCases.RewardsTest"></class>-->
+					<class name="testCases.RewardCreationTest"></class>
+		
+		<!-- syntax to comment line in xml file-->	
+			
+
+		</classes>
+
+	</test>
+
+</suite>
